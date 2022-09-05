@@ -9,7 +9,11 @@ Esse projeto tem a finalidade de estudar NodeJS e Discord.js
 
 ## Como inicializar
 
-**Iniciar Frond-end**
+**Invite Bot**
+*Primeiro faça o invite do bot para seu discord*
+*url: https://discord.com/api/oauth2/authorize?client_id=993890404476919868&permissions=8&scope=bot*
+
+**Startando Bot**
 ```bash
   cd Majortime-master
   npm start
