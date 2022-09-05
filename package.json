@@ -1,0 +1,25 @@
+{
+  "name": "majortime",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ryanvs",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^13.8.1",
+    "dotenv": "^16.0.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanoliveiragit/Majortime-master.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ryanoliveiragit/Majortime-master/issues"
+  },
+  "homepage": "https://github.com/ryanoliveiragit/Majortime-master#readme",
+  "description": ""
+}
