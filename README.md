@@ -7,11 +7,15 @@ Esse projeto tem a finalidade de estudar NodeJS e Discord.js
 
 - NodeJS
 
-## Como inicializar
-
 **Invite Bot**
 *Primeiro faça o invite do bot para seu discord*
 url: https://discord.com/api/oauth2/authorize?client_id=993890404476919868&permissions=8&scope=bot
+Digite !major ( a mensagem será apagada em segundos )
+
+
+## Como inicializar
+*obs necessita criação do arquivo .env em seguida utilize
+token=(token do seu bot)
 
 **Startando Bot**
 ```bash
