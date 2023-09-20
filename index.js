@@ -12,7 +12,7 @@ const client = new Client({
 
 client.on('ready', () => {
     setInterval(() => {
-        const newYers = "10 november 2022"
+        const newYers = "19 January 2024"
         const newYearsDate = new Date(newYers);
         const currentDate = new Date();
         const totalSeconds = (newYearsDate - currentDate) / 1000;
@@ -33,7 +33,7 @@ client.on('ready', () => {
 
 client.on('ready', () => {
     setInterval(() => {
-        const newYers = "10 november 2022"
+        const newYers = "19 January 2024"
         const newYearsDate = new Date(newYers);
         const currentDate = new Date();
         const totalSeconds = (newYearsDate - currentDate) / 1000;
@@ -43,8 +43,8 @@ client.on('ready', () => {
         const data = (`${days} dias, ${hours} horas e ${mins} minutos`)
         let chanel = client.channels.cache.get("961357693405265960")
         const msgembed = new MessageEmbed()
-            .setColor('#39D6AB')
-            .setTitle('#IEM Major Rio 2022')
+            .setColor('#ffff00')
+            .setTitle('#Road to Galinhas')
             .setDescription(`Faltam: ${data}`)
             .setImage('https://www.esports.net/br/wp-content/uploads/sites/3/2022/05/Novo-Projeto.jpg')
             .setTimestamp()
@@ -53,8 +53,9 @@ client.on('ready', () => {
     }, 86400000);
     console.log('Servidor Atualizado!')
 })
+
 client.on('messageCreate', async (message) => {
-    const newYers = "10 november 2022"
+    const newYers = "19 January 2024"
     const newYearsDate = new Date(newYers);
     const currentDate = new Date();
     const totalSeconds = (newYearsDate - currentDate) / 1000;
@@ -65,26 +66,16 @@ client.on('messageCreate', async (message) => {
 
     if (message.author.bot) return;
 
-    if (message.content === '!major') {
-        const keywords = ['Hotel Armação'];
-        const randomKeyword = keywords[Math.floor(Math.random() * keywords.length)];
+    if (message.content === '!galinhas') {
         try {
-            const timestamp = Date.now();
-            const randomParam = Math.random().toString(36).substring(7); // Gera um parâmetro aleatório
-            const response = await axios.get(`https://www.googleapis.com/customsearch/v1?q=${randomKeyword}&cx=57ebce0cc5bda482f&key=AIzaSyB7CqOtd2GzUNm_ArB4BIHnrhCAwEJDYtI&searchType=image&num=1&t=${timestamp}`);
-
-            const imageUrl = response.data.items[0].link;
-
-    
-
             const msgembed = new MessageEmbed()
-                .setColor('#39D6AB')
-                .setTitle('#IEM Major Rio 2022')
+                .setColor('#ffff00')
+                .setTitle('#Road to Galinhas')
                 .setDescription(`Faltam: ${data}`)
-                .setImage(imageUrl) // Use a URL da imagem obtida
+                .setImage('https://media.discordapp.net/attachments/961357693405265960/1154099734043164723/Victor_H._bodybuilder_chicken_on_sky_with_red_eyes_lightning_te_81214435-1bd1-423c-a1e1-c9404c687f4c.png?width=675&height=675') // Use a URL da imagem obtida
                 .setTimestamp()
-            message.channel.send({ embeds: [msgembed] }).then(msg => setTimeout(() => msg.delete(), 10000));
-            setTimeout(() => message.delete(), 100000);
+            message.channel.send({ embeds: [msgembed] }).then(msg => setTimeout(() => msg.delete(), 20000));
+            setTimeout(() => message.delete(), 200000);
         } catch (error) {
             console.error(error);
             message.channel.send('Ocorreu um erro ao buscar a imagem.');
